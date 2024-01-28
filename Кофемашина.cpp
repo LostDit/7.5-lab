@@ -31,8 +31,7 @@ int main() {
 		std::cout << "Введите сколько заливаете воды: ";
 		std::cin >> water;
 
-	}
-	while (true) {
+	}while (true) {
 
 
 		int choice, i1 = 0, i2 = 0;
@@ -48,17 +47,16 @@ int main() {
 				water -= 300;
 				i1++;
 				std::cout << "Ваш напиток готов.\n";
-
-			}
-			else if (choice == 2 && water >= 30 && milk >= 270) {
+	
+			}else if (choice == 2 && water >= 30 && milk >= 270) {
 
 				water -= 30;
 				milk -= 270;
 				i2++;
 				std::cout << "Ваш напиток готов.\n";
+			
 
-			}
-			else if (milk < 270 || water < 30) {
+			}else if (milk < 270 || water < 30) {
 
 				std::cout << "Недостачное количество ингридиентов для приготовления 'латте' \n";
 				std::cout << "***Отчёт***\n";
@@ -66,8 +64,9 @@ int main() {
 				std::cout << "Кружек американо приготовлено: " << i1 << "\n";
 				std::cout << "Кружек латте приготовлено: " << i2 << "\n";
 				break;
-			}
-			else if (water < 300) {
+			
+			
+			}else if (water < 300) {
 
 				std::cout << "Недостачное количество ингридиентов для приготовления 'американо' \n";
 				std::cout << "***Отчёт***\n";
@@ -75,6 +74,7 @@ int main() {
 				std::cout << "Кружек американо приготовлено: " << i1 << "\n";
 				std::cout << "Кружек латте приготовлено: " << i2 << "\n";
 				break;
+			
 			}else {
 				
 				if (choice > 2 || choice < 1)
